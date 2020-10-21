@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  background: #bbf;
+  color: #aaa;
+}
+
+button.active {
+  background: #f00;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin: auto;
+  width: 740px;
+  border: 10px solid #069;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  width: 720px;
+  height: 720px;
+  background: #fff;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  .tab-head {
+    height: 2rem;
+    .tab-tab {
+      display: inline;
+      @include pointable;
+      @include selectable;
+    }
+  }
+  .tab-body {
+    position: relative;
+    height: auto;
+    display: block;
+    .tab-pane {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      @include activatable;
+      &.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+  }
+}

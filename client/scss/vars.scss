@@ -1,0 +1,31 @@
+// Base unit
+
+$rem: 10px;
+
+// Options
+
+$montserrat: 'Montserrat', 'Open Sans', 'Helvetica Neue', Helvetica, FreeSans, Arial, sans-serif;
+$open-sans: 'OpenSans', 'Helvetica Neue', Helvetica, FreeSans, Arial, sans-serif;
+
+// Settings
+
+$breakpoints: (
+  b2: 1920px,
+  b1: 1440px,
+  n: null,
+  s1: 960px,
+  s2: 720px,
+  s3: 640px,
+  s4: 360px
+);
+
+$grid-spacing: 1rem;
+
+$container-width: 1200px;
+
+$title-stack: $montserrat;
+$body-stack: $open-sans;
+
+// Constants
+
+$sides: 'top', 'right', 'bottom', 'left';

@@ -1,0 +1,12 @@
+/frames
+/node_modules
+/data
+/test
+/tmp
+*.log
+*.png
+*.gif
+*.jpeg
+*.jpg
+*.mp4
+*.webm

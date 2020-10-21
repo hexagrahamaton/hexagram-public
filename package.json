@@ -1,0 +1,31 @@
+{
+  "name": "hexagram",
+  "version": "0.0.1",
+  "description": "Web-based hexagon-management platform",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "doc": "bin/doc.sh",
+    "sass": "bin/sass.sh",
+    "start": "bin/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hexagons"
+  ],
+  "author": "graham",
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "chokidar": "^3.3.1",
+    "glob": "^7.1.6",
+    "jsdoc": "^3.6.4",
+    "node-sass": "^4.14.1",
+    "static-server": "^2.2.1",
+    "yaml": "^1.7.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

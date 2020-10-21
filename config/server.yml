@@ -1,0 +1,13 @@
+default:
+  port: 8000
+  width: 2880
+  height: 2880
+  fps: 30
+  codec: libx264
+  crf: 15
+  output: output
+  saveImages: true
+  saveVideo: false
+  imageFilename: frame-#####
+  imageStartIndex: 0
+  videoFilename: video.mp4

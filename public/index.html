@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="hexagram.css"/>
+  <title>Hexagram</title>
+<body>
+<nav class="toolbar toolbar-main">
+<button class="icon-record"></button>
+</nav>
+<main class="main">
+
+<input id="framez" type="text"/>
+<section class="tabs">
+  <div class="tab-head">
+    <div class="tab-tab">Draw1</div>
+    <div class="tab-tab">Draw2</div>
+    <div class="tab-tab">Draw3</div>
+    <div class="tab-tab selected">Render</div>
+  </div>
+  <div class="tab-body"style="height: 720px;">
+    <div class="tab-pane">
+      <canvas class='canvas-frame' id="draw1"></canvas>
+    </div>
+    <div class="tab-pane">
+      <canvas class='canvas-frame' id="draw2"></canvas>
+    </div>
+    <div class="tab-pane">
+      <canvas class='canvas-frame' id="draw3"></canvas>
+    </div>
+    <div class="tab-pane active">
+      <canvas id="thecanvas"></canvas>
+    </div>
+  </div>
+</section>
+</main>
+
+</canvas>
+<script src="vendor/twgl.js"></script>
+<script src="vendor/dat.gui.js"></script>
+<script src="database.js"></script>
+<script src="session.js"></script>
+<script src="canvas-frame.js"></script>
+<script src="hexagram-ui.js"></script>
+<script src="hexagram-app.js"></script>
+<script src="hexagram.js"></script>
+</body>
